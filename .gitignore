@@ -1,0 +1,8 @@
+venv
+*.log
+*.pyc
+.env
+__pycache__/
+src/project/settings/local.py
+static/*
+!static/.gitkeep
