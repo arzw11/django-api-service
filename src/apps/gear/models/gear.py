@@ -14,21 +14,6 @@ class Gear(TimedBaseModel):
         verbose_name='Описание',
         blank=True,
     )
-    mining_modifier = models.FloatField(
-        verbose_name="Модификатор добычи",
-        blank=False,
-        default=1,
-    )
-    cooldown_modifier = models.FloatField(
-        verbose_name="Модификатор перезарядки",
-        blank=False,
-        default=1,
-    )
-    drop_chance = models.FloatField(
-        verbose_name="Шанс выпадения",
-        blank=False,
-        null=False
-    )
     is_prototype = models.BooleanField(
         verbose_name="Является образцом",
         default=False
