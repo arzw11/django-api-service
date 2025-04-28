@@ -8,13 +8,13 @@ class ItemQuality(TimedBaseModel):
         verbose_name="Название качества",
         max_length=255,
         blank=False,
-        null=False
+        null=False,
     )
     drop_chance = models.DecimalField(
         verbose_name="Шанс выпадения",
         max_digits=5,
         decimal_places=2,
-        default=0.00
+        default=0.00,
     )
 
     def __str__(self) -> str:

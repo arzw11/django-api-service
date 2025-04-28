@@ -1,12 +1,12 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime
 
-from src.apps.common.enums import EntityStatus
 from src.apps.gear.entities.item_quality import ItemQuality
+
 
 @dataclass
 class Gear:
-    id: int
+    id: int # noqa
     title: str
     description: str
     is_prototype: bool
@@ -15,5 +15,3 @@ class Gear:
 
     created_at: datetime
     updated_at: datetime | None = None
-
-

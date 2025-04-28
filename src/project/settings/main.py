@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-import environ
-
 from pathlib import Path
 
+import environ
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'src.apps.gear.apps.GearConfig'
+    'src.apps.gear.apps.GearConfig',
 ]
 
 MIDDLEWARE = [

@@ -4,7 +4,7 @@ from src.apps.gear.entities.item_quality import ItemQuality as ItemQualityEntity
 
 
 class ItemQualitySchema(BaseModel):
-    id: int
+    id: int # noqa
     title: str
     drop_chance: float
 
@@ -13,5 +13,5 @@ class ItemQualitySchema(BaseModel):
         return cls(
             id=entity.id,
             title=entity.title,
-            drop_chance=entity.drop_chance
+            drop_chance=entity.drop_chance,
         )

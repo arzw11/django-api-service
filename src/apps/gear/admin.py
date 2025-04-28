@@ -8,6 +8,7 @@ from src.apps.gear.models.item_quality import ItemQuality
 class GearAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "is_prototype"]
 
+
 @admin.register(ItemQuality)
 class ItemQualityAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "drop_chance"]

@@ -8,12 +8,11 @@ from src.apps.gear.entities.gear import Gear as GearEntity
 
 
 class GearSchema(BaseModel):
-    id: int
+    id: int # noqa
     title: str
     description: str
     is_prototype: bool
     quality: ItemQualitySchema
-
 
     created_at: datetime
     updated_at: datetime | None = None
@@ -26,10 +25,10 @@ class GearSchema(BaseModel):
             description=entity.description,
             is_prototype=entity.is_prototype,
             quality=ItemQualitySchema.from_entity(
-                entity=entity.quality
+                entity=entity.quality,
             ),
             created_at=entity.created_at,
-            updated_at=entity.updated_at
+            updated_at=entity.updated_at,
         )
 
 

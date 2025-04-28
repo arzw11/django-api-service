@@ -1,1 +1,1 @@
-from .gear import Gear
+from .gear import Gear  # noqa
